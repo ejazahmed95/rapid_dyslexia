@@ -149,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 42376875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148387606d0ccd84fa326ca211f274ba, type: 3}
+  m_Script: {fileID: 11500000, guid: a4eea719daa62234fb362258688c7980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AgentTypeID: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4d0be17a222cafb44a497b7ba035c002, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 428121fa3edb78148a854bb1deaf8726, type: 2}
 --- !u!4 &42376877
 Transform:
   m_ObjectHideFlags: 0
@@ -218,11 +218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 139719354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb402b90d0b84ad4eaaaec77a1fef459, type: 3}
+  m_Script: {fileID: 11500000, guid: 0502d590e1a5aae4e94e8f2cb8429ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 618637570}
-  gameWords: {fileID: 1730897304}
+  gameWords: {fileID: 0}
   camera: {fileID: 970679100}
   GameWordsButton: {fileID: 889660163}
   GameWordsExitButton: {fileID: 632642861}
@@ -354,9 +354,9 @@ GameObject:
   - component: {fileID: 618637573}
   - component: {fileID: 618637572}
   - component: {fileID: 618637571}
-  - component: {fileID: 618637570}
   - component: {fileID: 618637574}
   - component: {fileID: 618637575}
+  - component: {fileID: 618637570}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 618637569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 052f217addec26f448d718591c79f12b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a28e68bf984f244797ad847af7be05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 0}
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1074394873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 03a9667665eefd9418d098cb25092c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
@@ -1368,7 +1368,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1391375655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 03a9667665eefd9418d098cb25092c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
@@ -1493,11 +1493,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1730897302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d09e56fad07e14db5ae117066d3267, type: 3}
+  m_Script: {fileID: 11500000, guid: da112f1d41e18ef4aba8e4246ecc679c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   formOffset: {fileID: 1037738232}
-  word: {fileID: 8962470145611866939, guid: 85652e65baed4e24580013654ee404e0, type: 3}
+  word: {fileID: 8962470145611866939, guid: a9b468b80930b0747b6dd88af8e4c329, type: 3}
   words: "\u662F\u4E0D\u662F\u54E6"
 --- !u!212 &1730897305
 SpriteRenderer:
@@ -1561,9 +1561,9 @@ GameObject:
   - component: {fileID: 1758531806}
   - component: {fileID: 1758531809}
   - component: {fileID: 1758531808}
-  - component: {fileID: 1758531807}
   - component: {fileID: 1758531810}
   - component: {fileID: 1758531811}
+  - component: {fileID: 1758531807}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -1594,13 +1594,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1758531805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 014e629d60875194a8118d970fd21222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
+  trigger: {fileID: 889660163}
+  player: {fileID: 618637570}
 --- !u!61 &1758531808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1713,11 +1711,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1758531805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a592028a5c6c194f8ad078c1b913066, type: 3}
+  m_Script: {fileID: 11500000, guid: 03a9667665eefd9418d098cb25092c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: {fileID: 889660163}
-  player: {fileID: 618637570}
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1943179636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1760,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943179636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 03a9667665eefd9418d098cb25092c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_OverrideArea: 1
@@ -1774,7 +1774,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943179636}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
