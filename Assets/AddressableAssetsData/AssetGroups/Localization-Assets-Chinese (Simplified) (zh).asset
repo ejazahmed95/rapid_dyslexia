@@ -16,12 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: dfce6d22771bf7b43b7976b0121ebd8c
-  m_SerializeEntries:
-  - m_GUID: 767094e04340251478ec1ceee202e290
-    m_Address: ErJianZi_Font SDF
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-zh
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 5b6b1e96917d14b419eb32716d826a70, type: 2}
   m_SchemaSet:

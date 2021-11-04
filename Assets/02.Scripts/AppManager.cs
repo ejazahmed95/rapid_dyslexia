@@ -2,13 +2,18 @@ using System;
 using Activity;
 using EAUtils;
 using Helpers;
+using UnityEditor.Localization;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class AppManager: MonoBehaviour {
 	#region MonoBehaviour Methods
 
 	private static AppManager instance;
 	private ActivityType currentActivity = ActivityType.None;
+	
+	[SerializeField] private GenericDictionary<LanguageType, Locale> _locales = new GenericDictionary<LanguageType, Locale>();
 	
 	private void Awake() {
 		if (instance == null) {
@@ -21,6 +26,15 @@ public class AppManager: MonoBehaviour {
 	}
 	#endregion
 
+	public void SetLocale(LanguageType languageType) {
+		if (_locales.TryGetValue(languageType, out Locale value)) {
+			Log.i("AM", $"updated the locale to {value}");
+			LocalizationSettings.SelectedLocale = value;
+		} else {
+			Log.e("AM", $"could not locate the locale for language type {languageType}");
+		}
+	}
+	
 	public ActivityType GetCurrentActivity() {
 		return currentActivity;
 	}

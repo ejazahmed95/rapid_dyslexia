@@ -38,5 +38,9 @@ MonoBehaviour:
     m_Localized: Start
     m_Metadata:
       m_Items: []
+  - m_Id: 374845496623104
+    m_Localized: <Def_E>
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

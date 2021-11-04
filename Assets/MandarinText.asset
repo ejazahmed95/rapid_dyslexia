@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bbdca682414726a5eb051a76bee204, type: 3}
   m_Name: MandarinText
   m_EditorClassIdentifier: 
-  LanguageName: " \u666E\u901A\u8BDD "
+  LanguageName: ' '

@@ -14,37 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: Fonts
   m_TableCollectionNameGuidString: be9f7e96591080c4c88e6c4f7a3878df
-  m_Entries:
-  - m_Id: 17170169856
-    m_Key: BaseFont
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2177035403264
-    m_Key: MenuScene/Canvas/LanguageText
-    m_Metadata:
-      m_Items: []
+  m_Entries: []
   m_Metadata:
-    m_Items:
-    - id: 0
+    m_Items: []
   m_KeyGenerator:
-    id: 1
+    id: 0
   references:
     version: 1
     00000000:
-      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries:
-        - m_KeyId: 17170169856
-          m_TableCodes:
-          - zh
-          - en
-        - m_KeyId: 2177035403264
-          m_TableCodes:
-          - en
-          - zh
-        m_TypeString: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-    00000001:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1635971905670

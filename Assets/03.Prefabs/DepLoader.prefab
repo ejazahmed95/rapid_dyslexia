@@ -46,3 +46,4 @@ MonoBehaviour:
   sceneLoader: {fileID: 7862398680255941295, guid: 52b0be16d8727ab4fa5f6fdec59ccdfc, type: 3}
   appManager: {fileID: 3513957775842515644, guid: 1689c795e24454840ad878e36db83db3, type: 3}
   languageSettings: {fileID: 11400000, guid: e41c4ca5cb3a6f146827581be057b5fb, type: 2}
+  _statsController: {fileID: 5860321682468836372, guid: c25f182c8a66af7478d2f9b5d89bbf93, type: 3}

@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 76872787165184
-    m_Localized: Select the Language
+    m_Localized: Select the Language Ch
     m_Metadata:
       m_Items: []
   - m_Id: 77270767894528
@@ -36,6 +36,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 83934032166912
     m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374845496623104
+    m_Localized: <Def_M>
     m_Metadata:
       m_Items: []
   references:
