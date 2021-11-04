@@ -30,8 +30,8 @@ public class AppManager: MonoBehaviour {
 		switch (aType) {
 			case ActivityType.None:
 				break;
-			case ActivityType.ScienceQuiz:
-				SLoader.LoadScene("", false);
+			case ActivityType.WordGame:
+				SLoader.LoadScene("ActivityScene", false);
 				break;
 			case ActivityType.MathQuiz:
 				break;

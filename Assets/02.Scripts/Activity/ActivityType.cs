@@ -1,7 +1,7 @@
 namespace Activity {
 	public enum ActivityType {
 		None,
-		ScienceQuiz, // Ejaz
+		WordGame, // Ejaz
 		MathQuiz,
 		ReadingQuiz, // CMY
 		CatchAWord, // CMY
