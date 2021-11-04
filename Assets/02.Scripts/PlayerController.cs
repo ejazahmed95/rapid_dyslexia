@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+
+public enum MentalStatus { normal, worrying, pain, breakdown}
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject floor;
+
+    MentalStatus mental = MentalStatus.normal;
 
     private NavMeshAgent agent;
     private bool canControll;
@@ -14,7 +19,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        floor = GameObject.FindGameObjectWithTag("Floor");
+        //floor = GameObject.FindGameObjectWithTag("Floor");
         SetCanControll(true);
 
         agent = GetComponent<NavMeshAgent>();
@@ -49,22 +54,42 @@ public class PlayerController : MonoBehaviour
     
                 targetPos.x = screenpos2.x * (mapSize.x / Screen.width);
                 targetPos.y = screenpos2.y * (mapSize.y / Screen.height);
+                //targetPos.x = screenpos2.x  / Screen.width;
+                //targetPos.y = screenpos2.y  / Screen.height;
                 targetPos.z = 0;
             }
             else
             {
                 Vector3 mapSize = floor.transform.localScale;
                 Vector2 screenpos = Input.mousePosition;
+                //Debug.Log(screenpos);
                 Vector2 screenpos2;
                 screenpos2.x = screenpos.x - (Screen.width / 2);
                 screenpos2.y = screenpos.y - (Screen.height / 2);
 
                 targetPos.x = screenpos2.x * (mapSize.x / Screen.width);
                 targetPos.y = screenpos2.y * (mapSize.y / Screen.height);
+                //targetPos.x = screenpos2.x  / Screen.width;
+                //targetPos.y = screenpos2.y  / Screen.height;
                 targetPos.z = 0;
             }
             
             agent.SetDestination(targetPos);
+        }
+
+        if (Input.touches.Length > 0)
+        {
+
+        }
+        else
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (EventSystem.current.IsPointerOverGameObject())
+                {
+                    Debug.Log("yes!");
+                }
+            }
         }
 
         //if (Input.GetKeyDown(KeyCode.E))
@@ -72,5 +97,15 @@ public class PlayerController : MonoBehaviour
         //    Debug.Log("E has pressed!");
         //    SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
         //}
+    }
+
+    public void SetMental(MentalStatus newStatus)
+    {
+        this.mental = newStatus;
+    }
+
+    public MentalStatus GetMental()
+    {
+        return this.mental;
     }
 }
