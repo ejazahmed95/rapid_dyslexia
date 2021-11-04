@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5894b325519842b29a0c4e7737494029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _settings: {fileID: 11400000, guid: 30b97d4c41d1c3943a7c9120cf40d1a5, type: 2}
   _locales:
     list:
     - Key: 0

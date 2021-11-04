@@ -1,20 +1,21 @@
 using System;
+using System.Collections;
 using Activity;
 using EAUtils;
 using Helpers;
-using UnityEditor.Localization;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
 public class AppManager: MonoBehaviour {
-	#region MonoBehaviour Methods
 
 	private static AppManager instance;
 	private ActivityType currentActivity = ActivityType.None;
-	
+
+	[SerializeField] private GameSettings _settings;
 	[SerializeField] private GenericDictionary<LanguageType, Locale> _locales = new GenericDictionary<LanguageType, Locale>();
 	
+	#region MonoBehaviour Methods
 	private void Awake() {
 		if (instance == null) {
 			instance = this;
@@ -24,6 +25,11 @@ public class AppManager: MonoBehaviour {
 			Destroy(this);
 		}
 	}
+
+	private void Start() {
+		SetLocale(_settings.languageType);
+	}
+
 	#endregion
 
 	public void SetLocale(LanguageType languageType) {
@@ -45,7 +51,7 @@ public class AppManager: MonoBehaviour {
 			case ActivityType.None:
 				break;
 			case ActivityType.WordGame:
-				SLoader.LoadScene("ActivityScene", false);
+				SLoader.LoadScene(Constants.ACTIVITY_SCENE, false);
 				break;
 			case ActivityType.MathQuiz:
 				break;
@@ -58,7 +64,8 @@ public class AppManager: MonoBehaviour {
 		}
 	}
 
-	public void CloseActivity() {
+	public IEnumerator CloseActivity() {
+		yield return null;
 		SLoader.LoadScene(Constants.GAME_SCENE_NAME, false);
 	}
 }
