@@ -3,7 +3,7 @@ namespace Activity {
 		None,
 		WordGame, // Ejaz
 		MathQuiz,
-		ReadingQuiz, // CMY
+		MainScene,
 		CatchAWord, // CMY
 	}
 }

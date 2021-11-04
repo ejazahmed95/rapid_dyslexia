@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject floor;
 
-    MentalStatus mental = MentalStatus.normal;
+    MentalStatus mental = MentalStatus.worrying;
 
     private NavMeshAgent agent;
     private bool canControll;

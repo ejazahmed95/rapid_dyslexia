@@ -40,6 +40,11 @@ public class PagingControls : MonoBehaviour
             Pre.SetActive(true);
             Next.SetActive(true);
         }
+
+        foreach (GameObject page in Page)
+        {
+            page.GetComponent<StageControll>().StageUpdate(player.GetMental());
+        }
     }
 
     private void setPageInit()

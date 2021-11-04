@@ -21,6 +21,11 @@ public class AppManager: MonoBehaviour {
 	}
 	#endregion
 
+	public static AppManager GetInstance()
+    {
+		return instance;
+    }
+
 	public ActivityType GetCurrentActivity() {
 		return currentActivity;
 	}
@@ -35,7 +40,8 @@ public class AppManager: MonoBehaviour {
 				break;
 			case ActivityType.MathQuiz:
 				break;
-			case ActivityType.ReadingQuiz:
+			case ActivityType.MainScene:
+				SLoader.LoadScene("MainScene", false);
 				break;
 			case ActivityType.CatchAWord:
 				break;

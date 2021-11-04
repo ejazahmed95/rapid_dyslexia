@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public new Camera camera;
     public GameObject GameWordsButton;
     public GameObject GameWordsExitButton;
+    public GameObject ReadingScene;
 
     public GameObject NavMeshMap;
     public GameObject GameWordsMap;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         cameraMove = false;
 
         GameWordsExitButton.SetActive(false);
+        ReadingScene.SetActive(false);
     }
 
     // Update is called once per frame
@@ -62,5 +64,28 @@ public class GameManager : MonoBehaviour
         cameraMove = true;
         //GameWordsButton.SetActive(true);
         GameWordsExitButton.SetActive(false);
+    }
+
+    public void startReading()
+    {
+        player.SetCanControll(false);
+        cameraDes = GameWordsMap;
+        cameraMove = true;
+        ReadingScene.SetActive(true);
+        //GameWordsButton.SetActive(false);
+        //GameWordsExitButton.SetActive(true);
+    }
+
+    public void exitReading()
+    {
+        player.SetCanControll(true);
+        cameraDes = NavMeshMap;
+        cameraMove = true;
+        ReadingScene.SetActive(false);
+    }
+
+    public void LoadQuizScene()
+    {
+        AppManager.GetInstance().SetCurrentActivity(Activity.ActivityType.WordGame);
     }
 }
