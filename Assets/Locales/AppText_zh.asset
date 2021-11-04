@@ -22,5 +22,21 @@ MonoBehaviour:
     m_Localized: Mandarin
     m_Metadata:
       m_Items: []
+  - m_Id: 76872787165184
+    m_Localized: Select the Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77270767894528
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77354322624512
+    m_Localized: "\u666E\u901A\u8BDD\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83934032166912
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -4,8 +4,10 @@ using UnityEngine;
 public class DepLoader: MonoBehaviour {
 	// Singleton Object References
 	// [SerializeField] private GameObject gameManager = null;
-	[SerializeField] private GameObject sceneLoader = null;
+	[SerializeField] private SLoader sceneLoader = null;
+	[SerializeField] private AppManager appManager = null;
 	[SerializeField] private GameText languageSettings = null;
+	[SerializeField] private StatsController _statsController = null;
 
 	// state
 	private static bool initialised;
@@ -17,17 +19,17 @@ public class DepLoader: MonoBehaviour {
 		}
 		Log.i(name, "Instantiating game dependencies");
 		Instantiate(sceneLoader);
-		// Instantiate(gameManager);
+		Instantiate(appManager);
 		DI.Register(languageSettings);
 		// todo: disable debugger through code (or) add different debugging.
 		initialised = true;
 	}
 	
 	private bool Validate() {
-		var isValid = sceneLoader && languageSettings;
+		var isValid = sceneLoader && appManager && languageSettings;
 		if (!isValid) {
 			Log.e(name, $"Missing references:: " +
-						   $"Manager=[] || SceneLoader={sceneLoader} || LanguageSettings={languageSettings} ");
+						   $"Manager={appManager} || SceneLoader={sceneLoader} || LanguageSettings={languageSettings} ");
 		}
 		return isValid;
 	}
