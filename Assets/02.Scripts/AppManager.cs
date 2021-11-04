@@ -55,7 +55,8 @@ public class AppManager: MonoBehaviour {
 				break;
 			case ActivityType.MathQuiz:
 				break;
-			case ActivityType.ReadingQuiz:
+			case ActivityType.MainScene:
+				SLoader.LoadScene(Constants.GAME_SCENE_NAME, false);
 				break;
 			case ActivityType.CatchAWord:
 				break;

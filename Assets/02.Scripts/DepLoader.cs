@@ -26,7 +26,7 @@ public class DepLoader: MonoBehaviour {
 	}
 	
 	private bool Validate() {
-		var isValid = sceneLoader && appManager && languageSettings;
+		var isValid = sceneLoader && appManager;
 		if (!isValid) {
 			Log.e(name, $"Missing references:: " +
 						   $"Manager={appManager} || SceneLoader={sceneLoader} || LanguageSettings={languageSettings} ");
