@@ -22,7 +22,7 @@ public class EventTrigger : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("is trigger!!!!");
+        //Debug.Log("is trigger!!!!");
         if (collision.tag == "Player" && player.GetCanControll())
         {
             trigger.SetActive(true);

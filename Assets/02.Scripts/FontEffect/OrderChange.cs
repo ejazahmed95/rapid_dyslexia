@@ -9,6 +9,7 @@ public class OrderChange : MonoBehaviour
     public GameObject textObj;
     private Text text;
     private List<string> mText;
+    int timeTick = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -40,37 +41,53 @@ public class OrderChange : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+
+    private void FixedUpdate()
     {
-        updateMText();
-        string newT = "";
-        foreach(string t in mText)
+        //Debug.Log("tick!");
+        timeTick++;
+
+        if (timeTick >= 5)
         {
-            newT += t;
+            updateMText();
+            string newT = "";
+            foreach (string t in mText)
+            {
+                newT += t;
+            }
+            text.text = newT;
+
+            timeTick = 0;
         }
-        text.text = newT;
+    }
+    private void Update()
+    {
+
     }
 
     private void updateMText()
     {
         for(int j = 0; j < mText.Count; j ++)
         {
-            char[] currentT = { };
+            char[] currentT = new char[mText[j].Length];
             for (int i = 0; i < mText[j].Length; i++)
             {
                 currentT[i] = mText[j][i];
             }
 
-            for (int i = currentT.Length - 1; i > 0; i--)
-            {
+            //for (int i = currentT.Length - 1; i > 0; i--)
+            //{
                 UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks);
-                int index = UnityEngine.Random.Range(0, i);
-                char tmp = currentT[index];
-                currentT[index] = currentT[i];
-                currentT[i] = tmp;
-            }
+                int index1 = UnityEngine.Random.Range(0, currentT.Length - 1);
+                int index2 = UnityEngine.Random.Range(0, currentT.Length - 1);
+                char tmp = currentT[index2];
+                currentT[index2] = currentT[index1];
+                currentT[index1] = tmp;
+            //}
 
-            mText[j] = currentT.ToString();
+            string s = new string(currentT);
+
+            mText[j] = s;
         }
     }
 }
