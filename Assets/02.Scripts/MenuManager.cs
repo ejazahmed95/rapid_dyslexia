@@ -8,6 +8,7 @@ public class MenuManager: MonoBehaviour {
 	[SerializeField] private LanguageType _languageType;
 	[SerializeField] private Button _selectEnglishLocale;
 	[SerializeField] private Button _selectMandarinLocale;
+	[SerializeField] private Button _gameStartButton;
 	
 	private void Awake() {
 		
@@ -19,6 +20,8 @@ public class MenuManager: MonoBehaviour {
 		// Log.i("MENU", $"Menu started:: {_gameText.LanguageName}");
 		_selectEnglishLocale.onClick.AddListener(() => SetLanguageType(LanguageType.English));
 		_selectMandarinLocale.onClick.AddListener(() => SetLanguageType(LanguageType.Mandarin));
+		_gameStartButton.onClick.AddListener(OnStartClick);
+		
 		DI.Get<AppManager>().SetLocale(_languageType);
 	}
 
