@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using EAUtils;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,10 @@ public class PlayerController : MonoBehaviour
 
     private NavMeshAgent agent;
     private bool canControll;
+
+    private void Awake() {
+        mental = DI.Get<StatsController>().GetMentalStatus();
+    }
 
     // Start is called before the first frame update
     void Start()

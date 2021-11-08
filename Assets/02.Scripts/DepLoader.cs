@@ -20,6 +20,7 @@ public class DepLoader: MonoBehaviour {
 		Log.i(name, "Instantiating game dependencies");
 		Instantiate(sceneLoader);
 		Instantiate(appManager);
+		Instantiate(_statsController);
 		DI.Register(languageSettings);
 		// todo: disable debugger through code (or) add different debugging.
 		initialised = true;

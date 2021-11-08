@@ -14,7 +14,7 @@ public class AppManager: MonoBehaviour {
 
 	[SerializeField] private GameSettings _settings;
 	[SerializeField] private GenericDictionary<LanguageType, Locale> _locales = new GenericDictionary<LanguageType, Locale>();
-	
+
 	#region MonoBehaviour Methods
 	private void Awake() {
 		if (instance == null) {

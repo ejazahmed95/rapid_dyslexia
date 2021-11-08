@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stressMeter: 0
   _currentStats: {fileID: 11400000, guid: 5f2e99224352792498f86902b84f4b14, type: 2}
+  _mentalStatus: 0
