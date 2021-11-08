@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject floor;
 
-    MentalStatus mental = MentalStatus.worrying;
+    MentalStatus mental = MentalStatus.pain;
 
     private NavMeshAgent agent;
     private bool canControll;
@@ -92,11 +92,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //if (Input.GetKeyDown(KeyCode.E))
-        //{
-        //    Debug.Log("E has pressed!");
-        //    SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-        //}
     }
 
     public void SetMental(MentalStatus newStatus)

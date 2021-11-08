@@ -16,16 +16,12 @@ public class StageControll : MonoBehaviour
         switch(newMental)
         {
             case MentalStatus.normal:
+            case MentalStatus.worrying:
                 stage[0].SetActive(true);
                 break;
-            case MentalStatus.worrying:
-                stage[1].SetActive(true);
-                break;
             case MentalStatus.pain:
-                stage[2].SetActive(true);
-                break;
             case MentalStatus.breakdown:
-                stage[3].SetActive(true);
+                stage[1].SetActive(true);
                 break;
         }
     }

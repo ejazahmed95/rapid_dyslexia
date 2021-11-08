@@ -30,15 +30,23 @@ public class PagingControls : MonoBehaviour
         if (currentIndex == 0)
         {
             Pre.SetActive(false);
+            Next.SetActive(true);
         }
         if (currentIndex == Page.Length - 1)
         {
             Next.SetActive(false);
+            Pre.SetActive(true);
         }
         if (currentIndex != 0 && currentIndex != Page.Length - 1)
         {
             Pre.SetActive(true);
             Next.SetActive(true);
+        }
+
+        if (Page.Length == 1)
+        {
+            Pre.SetActive(false);
+            Next.SetActive(false);
         }
 
         foreach (GameObject page in Page)
