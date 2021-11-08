@@ -12,11 +12,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5432ce539f24f248fe138fcf0ac7027, type: 3}
   m_Name: BiggestAnimal 4
   m_EditorClassIdentifier: 
-  question: What is the biggest animal?
+  quest:
+    m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 40772781735936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   questionImage: {fileID: 0}
-  answer: Elephant
-  options:
-  - Cat
-  - Dog
-  - Mouse
-  - Elephant
+  ans:
+    m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 1287033454592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  timeForMaxScore: 2
+  optss:
+  - m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 356665524224
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 1008829464576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 1176744230912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
+    m_TableEntryReference:
+      m_KeyId: 1287033454592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 1

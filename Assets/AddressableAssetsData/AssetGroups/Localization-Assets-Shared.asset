@@ -25,6 +25,10 @@ MonoBehaviour:
     m_Address: Assets/Locales/AssetTables/Fonts Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 4cee27349c4425545983cb95feb7c88f
+    m_Address: Assets/Locales/Questions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 5b6b1e96917d14b419eb32716d826a70, type: 2}
   m_SchemaSet:

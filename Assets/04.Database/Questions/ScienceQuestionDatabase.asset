@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b162fc3ad9c74975a1eda47096b6d1ad, type: 3}
+  m_Name: ScienceQuestionDatabase
+  m_EditorClassIdentifier: 
+  questions:
+    list:
+    - Key: {fileID: 11400000, guid: 6ea26af9f16b8e145b3ac0d632470163, type: 2}
+    - Key: {fileID: 11400000, guid: e02c72049774be247a7a03b72435b6b3, type: 2}
+    - Key: {fileID: 11400000, guid: b6cdf8a5d0a4f114e9aa872288f58b8c, type: 2}
+    - Key: {fileID: 11400000, guid: eb11ccf3eb76018488c3c800f2449ae2, type: 2}
+    - Key: {fileID: 11400000, guid: 4bc038c4c9340a04f86966358fedc9a4, type: 2}
+    keyCollision: 0
