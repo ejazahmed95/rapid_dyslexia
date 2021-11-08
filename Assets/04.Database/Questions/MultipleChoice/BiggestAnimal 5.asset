@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5432ce539f24f248fe138fcf0ac7027, type: 3}
-  m_Name: BiggestAnimal 0
+  m_Name: BiggestAnimal 5
   m_EditorClassIdentifier: 
   quest:
     m_TableReference:
       m_TableCollectionName: GUID:4cee27349c4425545983cb95feb7c88f
     m_TableEntryReference:
-      m_KeyId: 65169784832
+      m_KeyId: 40772781735936
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -65,6 +65,5 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  answ: 0
   references:
     version: 1

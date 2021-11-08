@@ -19,39 +19,39 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 65169784832
-    m_Localized: Mandarin version of biggest animal
+    m_Localized: "\u4EE5\u4E0B\u52A8\u7269\u4E2D\u6700\u5927\u7684\u52A8\u7269\u662F\u4EC0\u4E48\uFF1F"
     m_Metadata:
       m_Items: []
   - m_Id: 356665524224
-    m_Localized: Chinese Cat
+    m_Localized: "\u732B"
     m_Metadata:
       m_Items: []
   - m_Id: 1008829464576
-    m_Localized: Chinese Dog
+    m_Localized: "\u72D7"
     m_Metadata:
       m_Items: []
   - m_Id: 1176744230912
-    m_Localized: Chinese Mouse
+    m_Localized: "\u9F20"
     m_Metadata:
       m_Items: []
   - m_Id: 1287033454592
-    m_Localized: Chinese Elephant
+    m_Localized: "\u5927\u8C61"
     m_Metadata:
       m_Items: []
   - m_Id: 40761641664512
-    m_Localized: This is the second question(mandarin)
+    m_Localized: "\u4EE5\u4E0B\u52A8\u7269\u4E2D\u6700\u5927\u7684\u52A8\u7269\u662F\u4EC0\u4E48\uFF1F"
     m_Metadata:
       m_Items: []
   - m_Id: 40765475258368
-    m_Localized: This is the third question(mandarin)
+    m_Localized: "\u4EE5\u4E0B\u52A8\u7269\u4E2D\u6700\u5927\u7684\u52A8\u7269\u662F\u4EC0\u4E48\uFF1F"
     m_Metadata:
       m_Items: []
   - m_Id: 40767027150848
-    m_Localized: This is the fourth question(mandarin)
+    m_Localized: "\u4EE5\u4E0B\u52A8\u7269\u4E2D\u6700\u5927\u7684\u52A8\u7269\u662F\u4EC0\u4E48\uFF1F"
     m_Metadata:
       m_Items: []
   - m_Id: 40772781735936
-    m_Localized: This is the fifth question(mandarin)
+    m_Localized: "\u4EE5\u4E0B\u52A8\u7269\u4E2D\u6700\u5927\u7684\u52A8\u7269\u662F\u4EC0\u4E48\uFF1F"
     m_Metadata:
       m_Items: []
   references:

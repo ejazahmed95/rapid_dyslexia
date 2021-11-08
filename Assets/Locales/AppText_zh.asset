@@ -42,5 +42,9 @@ MonoBehaviour:
     m_Localized: <Def_M>
     m_Metadata:
       m_Items: []
+  - m_Id: 1839755313283072
+    m_Localized: END QUIZ
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

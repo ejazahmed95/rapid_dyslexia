@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   mainCharacterName: Alex
-  languageType: 0
+  languageType: 1

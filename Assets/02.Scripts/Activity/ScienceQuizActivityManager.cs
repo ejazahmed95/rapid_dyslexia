@@ -14,16 +14,17 @@ namespace Activity {
 		[SerializeField] private ScienceQuestionDatabase _db;
 		[SerializeField] private int numQuestions = 3;
 		[SerializeField] private MCQQuestion _mcqQuestion;
-		
+		[SerializeField] private QuizPerformanceView _quizPerformanceView;
+
 		private List<KeyValuePair<BaseQuestion, QuestionPerformanceInfo>> _questions = new List<KeyValuePair<BaseQuestion, QuestionPerformanceInfo>>();
 		private Random _rGen;
 		private bool _quizInProgress = false;
 		private int _currentQIndex = 0;
 		private QuizPerformanceInfo _quizPerfInfo;
-		private QuizPerformanceView _quizPerformanceView;
 
 		private void Start() {
 			_quizPerformanceView.onEnd.AddListener(endQuiz);
+			StartQuiz();
 		}
 
 		public override void StartQuiz() {
@@ -41,7 +42,7 @@ namespace Activity {
 
 		private IEnumerator populateNextQuestion() {
 			yield return null;
-			if(_currentQIndex >= numQuestions) quizCompleted();
+			if(_currentQIndex > numQuestions) quizCompleted();
 			
 			BaseQuestion question = _questions[_rGen.Next(0, _questions.Count)].Key;
 			IQuestion obj = getObjectForQuestionType(question);
@@ -62,6 +63,7 @@ namespace Activity {
 
 		private void quizCompleted() {
 			_quizPerformanceView.EnableView(_quizPerfInfo);
+			endQuiz();
 		}
 
 		private void endQuiz() {

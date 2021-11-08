@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CurrentStats
   m_EditorClassIdentifier: 
   position: {x: 200, y: 200}
-  stressMeter: 34
+  stressMeter: 74
