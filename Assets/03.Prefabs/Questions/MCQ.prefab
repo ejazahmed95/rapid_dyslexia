@@ -227,18 +227,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option_2
       objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5710064893720935966, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -361,7 +349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_Text
-      value: What is the biggest animal among the following?
+      value: "\u662F\u4E0D\u662F\u771F\u7684\u54E6"
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_Color.b
@@ -377,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 48
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -385,7 +373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 48
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_FontData.m_FontStyle
@@ -507,18 +495,6 @@ PrefabInstance:
     - target: {fileID: 556100760109405969, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Name
       value: Option_3
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5710064893720935966, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Pivot.x
@@ -644,18 +620,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option_1
       objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5710064893720935966, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -779,18 +743,6 @@ PrefabInstance:
     - target: {fileID: 556100760109405969, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Name
       value: Option_4
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5710064893720935966, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Pivot.x

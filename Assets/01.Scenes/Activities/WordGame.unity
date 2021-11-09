@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.00001, y: 75}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -53.74, y: 124}
+  m_SizeDelta: {x: 252.5203, y: 88.2535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177250678
 MonoBehaviour:
@@ -182,11 +182,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50078a214c6665d408722ba353981bae, type: 3}
-    m_FontSize: 28
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -236,8 +236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -53.74, y: -108}
+  m_SizeDelta: {x: 252.52, y: 96.8202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274697134
 MonoBehaviour:
@@ -261,11 +261,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 50078a214c6665d408722ba353981bae, type: 3}
-    m_FontSize: 28
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 60
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -291,6 +291,10 @@ PrefabInstance:
     - target: {fileID: 556100760109405969, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_Name
       value: LocaleButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 785131448913959297, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 785131448913959302, guid: 3f2595605fe9d994aaeee3a9d1f6c6ee, type: 3}
       propertyPath: m_StringReference.m_TableEntryReference.m_KeyId

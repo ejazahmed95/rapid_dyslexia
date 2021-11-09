@@ -16,8 +16,8 @@ namespace _02.Scripts.View {
 
 		public void EnableView(QuizPerformanceInfo quizPerfInfo) {
 			gameObject.SetActive(true);
-			_correctQuestionsText.text   = $"CORRECT : {quizPerfInfo.answeredCorrect}";
-			_incorrectQuestionsText.text = $"WRONG   : {quizPerfInfo.answeredIncorrect}";
+			_correctQuestionsText.text   = $"ÕýÈ· : {quizPerfInfo.answeredCorrect}";
+			_incorrectQuestionsText.text = $"´íÎó   : {quizPerfInfo.answeredIncorrect}";
 		}
 
 		private void onClose() {

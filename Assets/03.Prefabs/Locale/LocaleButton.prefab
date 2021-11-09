@@ -130,11 +130,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_Text
-      value: Button
+      value: "\u9E1F"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885079792203276011, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7885079792203276012, guid: fba341b7032f4c94da680256b0c6d6cd, type: 3}
       propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
