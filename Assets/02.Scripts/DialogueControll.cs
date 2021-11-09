@@ -13,14 +13,13 @@ public class DialogueControll : MonoBehaviour
         dialogue.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         if (isShowing)
         {
             dialogue.SetActive(true);
             timer++;
-            if (timer == 360)
+            if (timer == 240)
             {
                 isShowing = false;
                 timer = 0;
