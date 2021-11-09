@@ -15,6 +15,10 @@ public class AppManager: MonoBehaviour {
 	[SerializeField] private GameSettings _settings;
 	[SerializeField] private GenericDictionary<LanguageType, Locale> _locales = new GenericDictionary<LanguageType, Locale>();
 
+	[SerializeField] private Font _englishFont;
+	[SerializeField] private Font _mandarinFont;
+
+	private LanguageType _languageType = LanguageType.Mandarin;
 	#region MonoBehaviour Methods
 	private void Awake() {
 		if (instance == null) {
@@ -32,7 +36,8 @@ public class AppManager: MonoBehaviour {
 
 	#endregion
 
-	public void SetLocale(LanguageType languageType) {
+	public void SetLocale(LanguageType languageType){
+		_languageType = languageType;
 		if (_locales.TryGetValue(languageType, out Locale value)) {
 			Log.i("AM", $"updated the locale to {value}");
 			LocalizationSettings.SelectedLocale = value;
@@ -68,6 +73,14 @@ public class AppManager: MonoBehaviour {
 	public IEnumerator CloseActivity() {
 		yield return null;
 		SLoader.LoadScene(Constants.GAME_SCENE_NAME, false);
+	}
+
+	public Font GetFont(){
+		var id = LocalizationSettings.SelectedLocale.Identifier.Code;
+		if (id == "en"){
+			return _englishFont;
+		}
+		return _mandarinFont;
 	}
 }
 

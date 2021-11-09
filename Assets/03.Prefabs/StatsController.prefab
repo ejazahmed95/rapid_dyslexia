@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de459d36a8542dc8d082cced69450ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stressMeter: 70
+  stressMeter: 0
   _currentStats: {fileID: 11400000, guid: 5f2e99224352792498f86902b84f4b14, type: 2}
   _mentalStatus: 0

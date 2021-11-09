@@ -51,3 +51,5 @@ MonoBehaviour:
     - Key: 1
       Value: {fileID: 11400000, guid: 999cd1df4b785144b83d3a758daa82b5, type: 2}
     keyCollision: 0
+  _englishFont: {fileID: 12800000, guid: 135f5b7dd9acfc2428ebe870b434a002, type: 3}
+  _mandarinFont: {fileID: 12800000, guid: 50078a214c6665d408722ba353981bae, type: 3}
