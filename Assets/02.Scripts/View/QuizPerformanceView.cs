@@ -7,6 +7,8 @@ namespace _02.Scripts.View {
 	public class QuizPerformanceView: MonoBehaviour {
 		public UnityEvent onEnd = new UnityEvent();
 		[SerializeField] private Button _closeButton;
+		[SerializeField] private Text _correctQuestionsText;
+		[SerializeField] private Text _incorrectQuestionsText;
 
 		private void Start() {
 			_closeButton.onClick.AddListener(onClose);
@@ -14,11 +16,15 @@ namespace _02.Scripts.View {
 
 		public void EnableView(QuizPerformanceInfo quizPerfInfo) {
 			gameObject.SetActive(true);
+			_correctQuestionsText.text   = $"CORRECT : {quizPerfInfo.answeredCorrect}";
+			_incorrectQuestionsText.text = $"WRONG   : {quizPerfInfo.answeredIncorrect}";
 		}
 
 		private void onClose() {
 			onEnd.Invoke();
 		}
+		
+		
 		
 	}
 }

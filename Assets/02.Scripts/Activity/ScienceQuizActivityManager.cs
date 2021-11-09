@@ -21,15 +21,21 @@ namespace Activity {
 		private bool _quizInProgress = false;
 		[SerializeField] private int _currentQIndex = 0;
 		private QuizPerformanceInfo _quizPerfInfo;
+		private List<int> qOrder;
 
 		private void Start() {
 			_quizPerformanceView.onEnd.AddListener(endQuiz);
+			qOrder = Enumerable.Range(0, _db.questions.Count).ToList();
 			StartQuiz();
 		}
 
 		public override void StartQuiz() {
 			_rGen = new Random(DateTime.Now.Millisecond);
+			qOrder = qOrder.OrderBy(id => _rGen.Next()).ToList();
 			_questions.Clear();
+			
+			_mcqQuestion.gameObject.SetActive(true);
+			_quizPerformanceView.gameObject.SetActive(false);
 			
 			int size = _db.questions.Count;
 			_questions = _db.questions.ToList();
@@ -45,7 +51,7 @@ namespace Activity {
 			yield return null;
 			if(_currentQIndex >= numQuestions) quizCompleted();
 			
-			BaseQuestion question = _questions[_rGen.Next(0, _questions.Count)].Key;
+			BaseQuestion question = _questions[qOrder[_currentQIndex]].Key;
 			IQuestion obj = getObjectForQuestionType(question);
 			obj.PopulateQuestion(question);
 			// obj.RegisterOnAnsweredCallback(onQuestionAnswered);
@@ -64,12 +70,12 @@ namespace Activity {
 
 		private void quizCompleted() {
 			_quizPerformanceView.EnableView(_quizPerfInfo);
-			endQuiz();
+			_mcqQuestion.gameObject.SetActive(false);
+			var stress = _quizPerfInfo.answeredIncorrect * 15;
+			DI.Get<StatsController>().UpdateStress(stress);
 		}
 
 		private void endQuiz(){
-			var stress = _quizPerfInfo.answeredIncorrect * 15;
-			DI.Get<StatsController>().UpdateStress(stress);
 			StartCoroutine(DI.Get<AppManager>().CloseActivity());
 		}
 
