@@ -47,9 +47,9 @@ public class StatsController: MonoBehaviour {
 
 		if (stressMeter < 10) {
 			_mentalStatus = MentalStatus.normal;
-		} else if (stressMeter < 40) {
+		} else if (stressMeter < 30) {
 			_mentalStatus = MentalStatus.worrying;
-		} else if (stressMeter < 70) {
+		} else if (stressMeter < 50) {
 			_mentalStatus = MentalStatus.pain;
 		} else if (stressMeter <= 100) {
 			_mentalStatus = MentalStatus.breakdown;

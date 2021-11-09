@@ -28,6 +28,7 @@ public class AppManager: MonoBehaviour {
 		} else if (instance != this) {
 			Destroy(this);
 		}
+		DI.Register(_settings);
 	}
 
 	private void Start() {

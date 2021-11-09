@@ -1,7 +1,4 @@
-﻿using System;
-using EAUtils;
-using Unity.Mathematics;
-using UnityEditor;
+﻿using EAUtils;
 using UnityEngine;
 using UnityEngine.UI;
 

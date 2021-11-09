@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _db: {fileID: 11400000, guid: 9ea16145b56fa5c4d99f90af2af26533, type: 2}
-  numQuestions: 3
+  numQuestions: 5
   _mcqQuestion: {fileID: 1214676307}
   _quizPerformanceView: {fileID: 1863065837}
 --- !u!114 &1225343251
