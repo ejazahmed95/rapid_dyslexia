@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private NavMeshAgent agent;
     private bool canControll;
+    [SerializeField]private Animator _animator;
 
     private void Awake() {
         mental = DI.Get<StatsController>().GetMentalStatus();
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         //floor = GameObject.FindGameObjectWithTag("Floor");
         SetCanControll(true);
+
+        _animator = this.GetComponent<Animator>();
 
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -80,6 +83,18 @@ public class PlayerController : MonoBehaviour
             }
             
             agent.SetDestination(targetPos);
+        }
+
+        Debug.Log(agent.velocity);
+        _animator.SetBool("WalkLeft", false);
+        _animator.SetBool("WalkRight", false);
+        if (agent.velocity.x > 0)
+        {
+            _animator.SetBool("WalkRight", true);
+        }
+        if (agent.velocity.x < 0)
+        {
+            _animator.SetBool("WalkLeft", true);
         }
 
         if (Input.touches.Length > 0)
