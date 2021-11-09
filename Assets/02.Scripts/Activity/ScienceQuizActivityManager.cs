@@ -49,7 +49,10 @@ namespace Activity {
 
 		private IEnumerator populateNextQuestion() {
 			yield return null;
-			if(_currentQIndex >= numQuestions) quizCompleted();
+			if (_currentQIndex >= numQuestions) {
+				quizCompleted();
+				yield break;
+			}
 			
 			BaseQuestion question = _questions[qOrder[_currentQIndex]].Key;
 			IQuestion obj = getObjectForQuestionType(question);

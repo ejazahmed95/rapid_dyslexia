@@ -18,7 +18,6 @@ public class AppManager: MonoBehaviour {
 	[SerializeField] private Font _englishFont;
 	[SerializeField] private Font _mandarinFont;
 
-	private LanguageType _languageType = LanguageType.Mandarin;
 	#region MonoBehaviour Methods
 	private void Awake() {
 		if (instance == null) {
@@ -38,7 +37,7 @@ public class AppManager: MonoBehaviour {
 	#endregion
 
 	public void SetLocale(LanguageType languageType){
-		_languageType = languageType;
+		_settings.languageType = languageType;
 		if (_locales.TryGetValue(languageType, out Locale value)) {
 			Log.i("AM", $"updated the locale to {value}");
 			LocalizationSettings.SelectedLocale = value;
