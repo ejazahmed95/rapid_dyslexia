@@ -66,7 +66,9 @@ namespace Activity {
 			endQuiz();
 		}
 
-		private void endQuiz() {
+		private void endQuiz(){
+			var stress = _quizPerfInfo.answeredIncorrect * 30;
+			DI.Get<StatsController>().UpdateStress(stress);
 			StartCoroutine(DI.Get<AppManager>().CloseActivity());
 		}
 
