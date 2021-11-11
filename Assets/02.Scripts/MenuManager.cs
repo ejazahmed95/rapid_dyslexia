@@ -26,7 +26,7 @@ public class MenuManager: MonoBehaviour {
 	}
 
 	public void OnStartClick() {
-		SLoader.LoadScene(Constants.GAME_SCENE_NAME, false);
+		SLoader.LoadScene(Constants.GAME_INTRO, false);
 	}
 
 	private void SetLanguageType(LanguageType type) {

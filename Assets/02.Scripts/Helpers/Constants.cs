@@ -19,6 +19,7 @@ namespace Helpers {
 		// Scene Names
 		public const string MENU_SCENE_NAME = "MenuScene";
 		public const string GAME_SCENE_NAME = "MainScene";
+		public const string GAME_INTRO = "IntroScene";
 		public const string ACTIVITY_SCENE = "WordGame";
 		public const string END_SCENE_NAME = "EndScene";
 
